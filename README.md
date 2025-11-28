@@ -8,6 +8,17 @@ This project uses circuitpython with raspberry pi pico wh to control a trackball
 
 You should be able to access the file system of pico as an external drive on macOS or Windows. The drive will appear as "CIRCUITPY" in File Explorer after connecting the Pico via USB to your computer.
 
+### Device connection
+
+- Connect the Raspberry Pi Pico WH to your computer via USB.
+- If a drive named "CIRCUITPY" appears, CircuitPython is already installed. If "RPI-RP2" appears (or nothing appears), hold the BOOTSEL button while plugging in to enter bootloader mode.
+- When CircuitPython is running, a serial device shows up as `/dev/tty.usbmodem*` on macOS (useful for REPL/logs).
+- Pin reference (Pico W pinout), helpful for locating `GP0` (SDA), `GP1` (SCL), `3V3(OUT)`, and `GND`:
+
+![Pimorini Trackball](https://shop.pimoroni.com/cdn/shop/products/Trackball_2_of_4_1500x1500_crop_center.JPG?v=1560173220)
+
+![Raspberry Pi Pico W Pinout](https://www.raspberrypi.com/documentation/microcontrollers/images/picow-pinout.svg)
+
 ### Bootstrap
 
 **1. Install CircuitPython on the Pico WH**
